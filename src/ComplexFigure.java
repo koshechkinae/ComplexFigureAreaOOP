@@ -9,10 +9,20 @@ public class ComplexFigure
         this.inscribedCircle = new Circle(side / 2);
     }
 
-    public float areaOf(int squareQuarterParts, int circleParts, int squareQuarterWithoutCircleParts)
+    public float area(int squareQuarterParts, int circleParts, int squareQuarterWithoutCircleParts)
     {
-        return squareQuarterParts * (square.area() / 4) +
+        return squareQuarterParts * areaOfSquareQuarter() +
                 circleParts * inscribedCircle.area() +
-                squareQuarterWithoutCircleParts * ((square.area() - inscribedCircle.area()) / 4);
+                squareQuarterWithoutCircleParts * areaOfSquareQuarterWithoutCircle();
+    }
+
+    private float areaOfSquareQuarter()
+    {
+        return square.area() / 4;
+    }
+
+    private float areaOfSquareQuarterWithoutCircle()
+    {
+        return (square.area() - inscribedCircle.area()) / 4;
     }
 }
