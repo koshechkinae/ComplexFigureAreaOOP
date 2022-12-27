@@ -14,7 +14,7 @@ public class Circle
         throw new IllegalArgumentException("Радиус круга должен быть больше 0!");
     }
 
-    public float area()
+    public float getArea()
     {
         return (float) (Math.PI * Math.pow(radius, 2));
     }

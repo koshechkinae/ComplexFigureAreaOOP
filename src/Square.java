@@ -14,7 +14,7 @@ public class Square
         throw new IllegalArgumentException("Длина стороны квадрата должна быть больше 0!");
     }
 
-    public float area()
+    public float getArea()
     {
         return (float) Math.pow(side, 2);
     }

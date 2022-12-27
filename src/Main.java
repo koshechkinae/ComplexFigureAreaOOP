@@ -9,11 +9,11 @@ public class Main
         {
             ComplexFigure complexFigure = new ComplexFigure(side);
 
-            float areaOfPicture1 = complexFigure.area(0,0,2);
+            float areaOfPicture1 = complexFigure.getArea(0, 0, 2);
 
-            float areaOfPicture2 = complexFigure.area(0,1,2);
+            float areaOfPicture2 = complexFigure.getArea(0, 1, 2);
 
-            float areaOfPicture3 = complexFigure.area(1,0,1);
+            float areaOfPicture3 = complexFigure.getArea(1, 0, 1);
 
             printAreaOfPicture("1", areaOfPicture1);
             printAreaOfPicture("2", areaOfPicture2);
